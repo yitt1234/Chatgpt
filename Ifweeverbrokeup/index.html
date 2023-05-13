@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's outfit</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css'><link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<br>
+<div id="app" class="wrapper">
+    <div id="205" class="top">
+        <input  type="text" id="something" class="locationa" placeholder="Miami, FL"/>
+        <div id="504" class="detail">
+            <span><i class="fa fa-map-marker"></i></span>
+            <span id="seo" class="Location"></span>
+            <span id="fe">7:30 pm</span>
+        </div>
+        <div id="506">
+            <h5 id="gpt"></h5>
+        </div>
+        <ul id="show" class="options">
+            <li id="good"><i class="wi wi-day-sunny"></i> WEATHER</li>
+
+            <li id="bad"><i class="fa fa-picture-o"></i>Today's outfit</li>
+        </ul>
+        <p id="505" class="latest-locations"><i class="fa fa-map-o"></i><span>LATEST LOCATIONS</span></p>
+    </div>
+    <div id="bo" class="bottom">
+        <ul>
+            <li>
+                <div class="temp-middle">
+                    <p class="temperature-stats"><span class="temperature" id="shit"></span></p>
+                    <p class="temp-extra"><span id="fe1" class="day">MONDAY 27th</span> <span id="seo1">4mph / 67°</span></p>
+                </div>
+            </li>
+            <center><img width="130" class="wd"><br>
+            <p id="wed" class="ohno" style="font-size:20px; width:185px;"></p></center>
+        </ul>
+    </div>
+</div>
+<!-- partial -->
+<script src='https://use.fontawesome.com/e6415110e2.js'></script>
+<script src="weather.js"></script>
+<script src="time.js"></script>
+<script src="controll.js"> </script>
+<script type="module" src="openai.js"></script>
+</body>
+</html>
