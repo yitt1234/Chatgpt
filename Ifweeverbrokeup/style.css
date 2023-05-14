@@ -1,0 +1,254 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900';
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    background: none;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+}
+
+i {
+    overflow: visible;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3a486a+0,7586c3+100 */
+    background: #3a486a;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #3a486a 0%, #7586c3 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #3a486a 0%, #7586c3 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #3a486a 0%, #7586c3 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#3a486a", endColorstr="#7586c3",GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
+    padding: 20px;
+
+    background-image: url(https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size:cover;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.wrapper {
+    width: 995px;
+    height: 655px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.5);
+}
+.temperature{
+    white-space: nowrap; /* prevent the text from wrapping */
+    overflow: hidden; /* hide any overflow */
+    text-overflow: ellipsis; /* add ellipsis at the end of the text */
+}
+.top {
+    width: 100%;
+    height: 465px;
+    position: relative;
+    background: url("https://hdimagesnew.com/wp-content/uploads/2015/11/Purple-Sunset-Wallpapers-0.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+.top .locationa {
+    padding: 40px;
+    font-size: 50px;
+    font-weight: 400;
+}
+.top .locationa::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #9C96BA;
+}
+.top .locationa:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #9C96BA;
+    opacity: 1;
+}
+.top .locationa::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #9C96BA;
+    opacity: 1;
+}
+.top .locationa:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #9C96BA;
+}
+.top .detail {
+    float: right;
+    padding: 40px;
+    text-align: right;
+}
+.top .detail span {
+    display: block;
+    font-size: 1.1em;
+}
+.top .detail i {
+    font-size: 55px;
+}
+.top ul.options {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.top ul.options li {
+    width: 170px;
+    position: relative;
+    padding-bottom: 25px;
+    text-align: center;
+    font-size: 0.9em;
+    display: inline-block;
+    float: left;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+.top ul.options li, .top ul.options li i {
+    transition: color 0.3s;
+}
+.top ul.options li i {
+    overflow: visible;
+    margin-right: 10px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.top ul.options li.selected, .top ul.options li:hover {
+    color: white;
+}
+.top ul.options li.selected i, .top ul.options li:hover i {
+    color: white;
+}
+.top ul.options li:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 7px;
+}
+.top ul.options li:nth-child(1):after {
+    background: #F5C650;
+}
+.top ul.options li:nth-child(2):after {
+    background: #99A2E7;
+}
+.top ul.options li:nth-child(3):after {
+    background: #66D0E6;
+}
+.top .latest-locations {
+    width: 250px;
+    height: 50px;
+    background-color: #77CA60;
+    line-height: 50px;
+    padding-left: 20px;
+    position: absolute;
+    right: -200px;
+    bottom: 80px;
+    margin: auto;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.top .latest-locations:hover {
+    right: 0;
+}
+.top .latest-locations i {
+    float: left;
+    line-height: 50px;
+    margin-right: 15px;
+    overflow: visible;
+}
+
+.bottom {
+    height: 190px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.bottom ul {
+    width: 100%;
+    height: 100%;
+}
+.bottom ul li {
+    height: 100%;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    float: left;
+    position: relative;
+    text-align: center;
+}
+.bottom ul li .temp-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bottom ul li .day {
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 5px 15px;
+    border-radius: 25px;
+}
+.ohno {
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 5px 15px;
+    border-radius: 25px;
+}
+.bottom ul li:not(:first-child) {
+    width: 10.5%;
+    font-size: 15px;
+}
+.bottom ul li:not(:first-child) p {
+    width: 100%;
+}
+.bottom ul li:not(:first-child) p:not(:first-child) {
+    margin-top: 15px;
+}
+.bottom ul li:not(:first-child) p.weather {
+    font-size: 30px;
+}
+.bottom ul li:not(:first-child) p.temperature {
+    font-size: 20px;
+}
+.bottom ul li:first-child {
+    width: 37%;
+    height: 100%;
+}
+.bottom ul li:first-child .temp-middle {
+    width: 100%;
+}
+.bottom ul li:first-child .temperature-stats {
+    font-size: 105px;
+}
+.bottom ul li:first-child .temperature-stats i {
+    font-size: 90px;
+    vertical-align: top;
+}
+.bottom ul li:first-child .temp-extra span {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 1em;
+    border-radius: 25px;
+}
+.bottom ul li:first-child .temp-extra span.day {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.wi-day-sunny {
+    color: #FDCF57;
+}
