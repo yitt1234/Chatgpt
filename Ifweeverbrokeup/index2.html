@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello</title>
+  <link rel="stylesheet" type="text/css" href="style1.css">
+	 <!-- Font Awesome --> 
+	 <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://kit.fontawesome.com/6c03e70cde.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+ <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400|Montserrat:300,500|Nunito+Sans:200,300,400,600|Open+Sans:400,600|Prompt:100,200,300,400,500|Raleway:200,300,400,500|Roboto:100,300,400,500" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+<div id="day-nightBG" class="artboard">
+		<div class="flex-location-date">
+			<div id="location"> </div> 
+			<div id="date"></div>
+		</div>
+		<div class="temp-icon-description">
+			<div class="temp column-left" id="temperature" ></div>
+			<div class="column-right">
+				<img id="icon-weather" class="ic"/>	
+				<div id="description" class="right-bottom"></div>	
+			</div>
+		</div>	
+		<div class="conditions-container">
+		<div class="container-names">	
+      <div class="names wind">wind</div>
+			<div class="names humidity">humidity</div>
+			<div class="names hi-lo">
+				<div id="high" class="hi-lo-name">lo</div>
+				<div id="low" class="hi-lo-name">hi</div>
+			</div>  	
+		</div>
+		<div class="container-icons">
+      <div class="icons wind"> <img src="https://github.com/AsiaKo/WeatherApp/blob/master/img/conditions/wind.png?raw=true" height="35px"></div>
+			<div  class="icons humidity"><img src="https://github.com/AsiaKo/WeatherApp/blob/master/img/conditions/humidity.png?raw=true" height="35px"></div> 		
+			<div class="icons lo-hi"><img src="https://github.com/AsiaKo/WeatherApp/blob/master/img/conditions/hi-lo.png?raw=true" height="35px"></div>
+		</div>
+		<div class="container-results">
+      <div class="results wind" id="wind"></div>
+			<div class="results humidity" id="humidity"></div>	
+			<div class="results min-max">
+				<div class="result" id="temp_min"></div>
+				<div class="result" id="temp_max"></div>
+			</div>
+		</div>
+     <div>
+		<br>
+		<p style="text-align:center;" id="nah" onclick="alert('Sorry There is no chatgpt for mobile version..')">ask chatgpt for today's outfit</p>
+	 </div>
+	 </div>
+</div>
+<a href="index.html"><button id="fuck1" style="background-color:transparent; color:transparent;">12</button></a>
+<script>
+var screenWidth;
+function a (){
+     screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+     if(screenWidth > 756){
+        document.getElementById("fuck1").click();
+      
+      }
+
+}
+setInterval(a, 500)
+</script>
+<!--  weather icons inspired by iOS -->
+<!-- partial -->
+  <script  src="weather.js"></script>
+  <script src="time.js"></script>
+</body>
+</html>
