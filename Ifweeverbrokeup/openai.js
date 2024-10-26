@@ -1,10 +1,10 @@
-// openai api key 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
+
 const temp1 = localStorage.getItem('temp');
 const wind3 = localStorage.getItem('wind2');
 import { Configuration, OpenAIApi } from 'https://cdn.skypack.dev/openai';
 
 const configuration = new Configuration({
-    apiKey: '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',
+    apiKey: 'Your Api Key',
 });
 const openai = new OpenAIApi(configuration);
 
